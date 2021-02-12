@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical">
+
+<TextView
+    android:id="@+id/team_a_textview"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:orientation="vertical" >
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="4dp"
+    android:text="Team A" />
 
-    <TextView
-        android:id="@+id/quantity_textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hello World"
-        android:textSize="20sp"/>
+<TextView
+    android:id="@+id/score_a_textview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="4dp"
+    android:text="0" />
 
+<Button
+    android:id="@+id/three_a_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:text="+3 Points" />
+
+<Button
+    android:id="@+id/two_a_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:text="+2 Points" />
+
+<Button
+    android:id="@+id/free_a_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:text="Free throw" />
 </LinearLayout>
