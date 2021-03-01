@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    int scoreTeamA = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,17 +25,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void displayPoints3(){
-        TextView scoreView = (TextView) findViewById(R.id.score_a_textview);
-        scoreView.setText(String.valueOf(3));
+        scoreTeamA += 3;
+        displayForTeamA(scoreTeamA);
     }
 
     public void displayPoints2(){
-        TextView scoreView = (TextView) findViewById(R.id.score_a_textview);
-        scoreView.setText(String.valueOf(2));
+        scoreTeamA += 2;
+        displayForTeamA(scoreTeamA);
     }
 
     public void displayPoints1(){
-        TextView scoreView = (TextView) findViewById(R.id.score_a_textview);
-        scoreView.setText(String.valueOf(1));
+        scoreTeamA++;
+        displayForTeamA(scoreTeamA);
     }
 }
