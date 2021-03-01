@@ -25,19 +25,22 @@ android:orientation="vertical">
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:text="+3 Points" />
+    android:text="+3 Points"
+    android:onClick="displayPoints3"/>
 
 <Button
     android:id="@+id/two_a_button"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:text="+2 Points" />
+    android:text="+2 Points"
+    android:onClick="displayPoints2"/>
 
 <Button
     android:id="@+id/free_a_button"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    android:text="Free throw" />
+    android:text="Free throw"
+    android:onClick="displayPoints1" />
 </LinearLayout>
