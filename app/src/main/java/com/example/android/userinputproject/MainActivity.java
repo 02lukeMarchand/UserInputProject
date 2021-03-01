@@ -1,6 +1,7 @@
 package com.example.android.userinputproject;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        displayForTeamA(3);
+        displayForTeamA(scoreTeamA);
     }
 
     /**
@@ -24,17 +25,17 @@ public class MainActivity extends AppCompatActivity {
         scoreView.setText(String.valueOf(score));
     }
 
-    public void displayPoints3(){
+    public void displayPoints3(View view){
         scoreTeamA += 3;
         displayForTeamA(scoreTeamA);
     }
 
-    public void displayPoints2(){
+    public void displayPoints2(View view){
         scoreTeamA += 2;
         displayForTeamA(scoreTeamA);
     }
 
-    public void displayPoints1(){
+    public void displayPoints1(View view){
         scoreTeamA++;
         displayForTeamA(scoreTeamA);
     }
