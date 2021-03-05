@@ -2,6 +2,7 @@ package com.example.android.userinputproject;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,6 +11,8 @@ public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA = 0;
     int scoreTeamB = 0;
+    String TeamA = "Team A";
+    String TeamB = "Team B";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,5 +68,10 @@ public class MainActivity extends AppCompatActivity {
         scoreTeamB = 0;
         displayForTeamA(scoreTeamA);
         displayForTeamB(scoreTeamB);
+
+        EditText teamA = (EditText) findViewById(R.id.team_a_textview);
+        EditText teamB = (EditText) findViewById(R.id.team_b_textview);
+        teamA.setText("Team A");
+        teamB.setText("Team B");
     }
 }

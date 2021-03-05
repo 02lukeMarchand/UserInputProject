@@ -20,7 +20,7 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
+        <EditText
             android:id="@+id/team_a_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
         android:layout_weight="1"
         android:orientation="vertical">
 
-        <TextView
+        <EditText
             android:id="@+id/team_b_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
