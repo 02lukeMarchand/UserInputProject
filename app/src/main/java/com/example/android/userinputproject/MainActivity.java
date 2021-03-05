@@ -11,8 +11,12 @@ public class MainActivity extends AppCompatActivity {
 
     int scoreTeamA = 0;
     int scoreTeamB = 0;
-    String TeamA = "Team A";
-    String TeamB = "Team B";
+
+    String savedNameA = "Team A";
+    String savedNameB = "Team B";
+
+    int savedScoreA = 0;
+    int savedScoreB = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,5 +77,29 @@ public class MainActivity extends AppCompatActivity {
         EditText teamB = (EditText) findViewById(R.id.team_b_textview);
         teamA.setText("Team A");
         teamB.setText("Team B");
+    }
+
+    public void save(View view){
+        EditText teamA = (EditText) findViewById(R.id.team_a_textview);
+        EditText teamB = (EditText) findViewById(R.id.team_b_textview);
+
+        savedNameA = teamA.getText().toString();
+        savedNameB = teamB.getText().toString();
+
+        savedScoreA = scoreTeamA;
+        savedScoreB = scoreTeamB;
+    }
+
+    public void load(View view){
+        EditText teamA = (EditText) findViewById(R.id.team_a_textview);
+        EditText teamB = (EditText) findViewById(R.id.team_b_textview);
+        teamA.setText(savedNameA);
+        teamB.setText(savedNameB);
+
+        scoreTeamA = savedScoreA;
+        scoreTeamB = savedScoreB;
+
+        displayForTeamA(scoreTeamA);
+        displayForTeamB(scoreTeamB);
     }
 }

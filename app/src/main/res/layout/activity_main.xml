@@ -136,6 +136,15 @@
     </LinearLayout>
     </LinearLayout>
 
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:onClick="save"
+        android:text="Save"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/reset_button"/>
 
     <Button
         android:id="@+id/reset_button"
@@ -146,4 +155,14 @@
         android:text="Reset"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/load_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:onClick="load"
+        android:text="Load"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/reset_button"/>
 </RelativeLayout>
